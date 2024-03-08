@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lwu.mapper.CountriesMapper">
+
+    <resultMap id="BaseResultMap" type="com.lwu.entity.Countries">
+            <id property="countryId" column="country_id" jdbcType="CHAR"/>
+            <result property="countryName" column="country_name" jdbcType="VARCHAR"/>
+            <result property="regionId" column="region_id" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        country_id,country_name,region_id
+    </sql>
+</mapper>
